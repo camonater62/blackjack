@@ -7,8 +7,9 @@
 using namespace std;
 
 Deck::Deck() {
-    m_Cards.reserve(4 * 52);
-    for (int i = 0; i < 4; i++) {
+    int decks = 8;
+    m_Cards.reserve(decks * 52);
+    for (int i = 0; i < decks; i++) {
         Populate();
     }
 }
